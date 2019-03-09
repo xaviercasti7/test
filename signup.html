@@ -2,44 +2,93 @@
     <head>
         <title>signup</title>
     </head> 
-    <body bgcolor="FFFF214">
-        <center><b>FORMULARIO REGISTRO</b></center>
+    <body bgcolor="#FFFFFF">
+        <litle><b>FORMULARIO REGISTRO</title>
+    </head>
+     <body>
+
+     <form>
+    <label for="nombre">Nombre:</label>
+    <br><input type="" pattern="[A-Z]{3,15}" litle="Solo mayuscula"><br>
+
+    <label for="nombre">Apellido:</label>
+    <br><input type="txt" placeholder="escribe  tu Apellido" maxlength="" name="nombre" id="nombre"><br>
+
+        <label for="nombre">numero de id:</label>
+        <br><input type="text" name="tel" value="" maxlength="20" onKeypress="if (event.keyCode < 48 || event.keyCode > 58) event.returnValue = false;"><br>
+ 
+
+
+
+        <label for="nombre">Genero:</label>
+        <input type="checkbox" name="" id="">masculino
+        <input type="checkbox" name="" id="">femenino
+        <br>
+        <label for="nombre">Telefono:</label>
+        <br><input type="celular" name="celular" value="" maxlength="20" onKeypress="if (event.keyCode < 48 || event.keyCode > 58) event.returnValue = false;"><br>
+
+        <label for="nombre">Celular:</label>
+        <br><input type="celular" name="celular" value="" maxlength="20" onKeypress="if (event.keyCode < 48 || event.keyCode > 58) event.returnValue = false;"><br>
+ 
+        <label for="nombre">Departamento:</label>
+        <br><select name="" id=""><br>
+                <option value="Amazona">Amazona</opttion>
+                <option value="Antioquia">Antioquia</opttion>
+                <option value="Arauca">Arauca</opttion>
+                <option value="Atlántico" >Atlántico</opttion>
+               <option value="Bolívar" >Bolívar</opttion>
+                        <option value="Boyacá" >Boyacá</opttion>
+                            <option value="Caldas" >Caldas</opttion>
+                                <option value="Caquetá" >Caquetá</opttion>
+                                    <option value="Casanare" >Casanare</opttion>
+                                        <option value="Narino" >Narino</opttion>
+                </select>
+            
+   <br>
+        <label for="nombre">Ciudad de nacimiento: </label>
+        <br><select name="" id=""><br>
+                <option value="Cali">Cali</opttion>
+                    <option value="Pasto">Pasto</opttion>
+                    <option value="Bogotá">Bogotá</opttion>
+                    <option value="Cartagena" >Cartagena</opttion>
+                        <option value="Medellín" >Medellín</opttion>
+                            <option value="Popayán" >Popayán</opttion>
+                                <option value="Manizales" >Manizales</opttion>
+                                    <option value="Quibdó" >Quibdó</opttion>
+                                        <option value="Montería" >Montería</opttion>
+                                            <option value="San Andres" >San Andres</opttion>
+                                                <br> </select><br>
+
+
+        <label for="nombre">Correo Electronico:</label>
+        <br><input type="txt" placeholder="email" maxlength="" name="nombre" id="nombre"><br>
+
+        <label for="nombre">Contrasena:</label>
+        <br><input type="password" placeholder="password" maxlength="" name="nombre" id="nombre"><br>
+
+        <label for="nombre">Confirmar contrasena:</label>
+        <br><input type="password" placeholder="password" maxlength="" name="nombre" id="nombre"><br>
+
+        <label for="nombre">Foto:</label>  <input type="file">
+        <br> <input type="txt" placeholder="" maxlength="" name="nombre" id="nombre"><br>
+
+        <label for="nombre">Tipo de identificacion:</label>
+        <br><select name="" id=""><br>
+            <option value="cédula de identidad (CI)">cédula de identidad (CI)</opttion>
+                <option value="cédula de ciudadanía (CC)">cédula de ciudadanía (CC)</opttion>
+                    <option value="tarjeta de identidad (TI)">tarjeta de identidad (TI)</opttion>
+                        <option value="tarjeta pasaporte (TP)">tarjeta pasaporte (TP)</opttion>
+                            <option value="registro civil (RC)">registro civil (RC)</opttion>
+                             <option value="identificación (ID)">identificación (ID)</opttion>   
+                                 
+                             </select>                          
+ 
+<br><br>
+<input type="submit" value="Registrarse">
+           
     
 
-      
-        Formulario de Registro:<br>
-   <br> Nombre : <input type="text" name="user:"
-     title="Este campo solo acepta letras" required>
-     <br> Apellidos : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> No identificacion : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Genero : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Telefono : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Celular : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Departamento Nac : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Ciudad Nac : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Correo electronico : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Contraseña : <input type="password" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Confirmar Contraseña : <input type="password" name="passwd:"
-     title="Este campo solo acepta letras" required>
-     <br> Foto : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> Tipo identificacion : <input type="text" name="Nombres:"
-     title="Este campo solo acepta letras" required>
-     <br> <input type = "submit" value = "Iniciar sesion">
-        
-
-       
-
-    
+ </form>
 
     </body>
 </html>
