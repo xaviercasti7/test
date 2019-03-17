@@ -1,42 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <title>Calculadora Basica</title>
-             
-        <body bgcolor="#E5FFCC">   
-        <center> <b><u><h1>Calculadora Basica </b> <h1></center>
-        <form name="signup" action="#" method="GET" > 
-        <center> Primer numero </center>
-        <center><input type="number"  name="user"> 
-        <center> Segundo numero  </center>
-    
-        <center><input type="subit"  value="calcular"> <br> <br>
-    
-            <label for="nombre">Tipo de Operacion:</label><br>
-            <br><select name="" id=""><br>
-            <option value="Amazona">restar</opttion>
-            <option value="Antioquia">multiplicar</opttion>
-            <option value="Arauca">dividir</opttion>
-            <option value="Arauca">sumar</opttion>
+             <meta charset="UTF-8">
+            <title>Operaciones Matematicas</title>
 
-               
-           
-               
-             
+    </head>
+    <body>
+         <fieldset>
+            <legend>Operaciones Matematicas</legend>
+            <form action="#"method="POST">
+                  <label for="N1">primer numero</label>
+                  <input type="number" name="n1" requred>
+                  <br><br>
+                  <label for="N2">segundo numero</label>
+                  <input type="number" name="n2" requred>
+                  <br><br>
+               <label for="operaciones">Operaciones </label>
+            
+   
+            <select name="operaciones"id="opr">
+                    <option value="sumar">sumar</option>
+                    <option value="restar">Restar</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+             </select>
+              <br>
+<input type="submit"name="enviar"value="Calcular">
+                       
+             </form>
+         </fieldset>
+    <h1>RESULTADOS</h1>
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-       
-    
-             
-       
-       
-       
-               </body> 
-        </html>
+    <?php
+    $n1=$_POST['n1'];
+    $n2=$_POST['n2'];
+    $opr=$_POST['operaciones'];
+    if(isset($_POST["enviar"])){
+    switch($opc){
+
+
+
+                                case'sumar':
+                                   $resultado=$n1 + $n2;
+                                   echo"la suma de ".$n1."+".$n2."=".$resultado;                   
+                                   break;
+                                case'restar':
+                                    $resultado=$n1 - $n2;
+                                    echo"la resta de ".$n1."+".$n2."=".$resultado;                   
+                                    break;
+                               case'dividir':
+                                    $resultado=$n1 * $n2;
+                                    echo"la multiplicacion de ".$n1."+".$n2."=".$resultado;                   
+                                    break;
+                                 case'multiplicarr':
+                                    $resultado=$n1 / $n2;
+                                    echo"la division de ".$n1."+".$n2."=".$resultado;                   
+                                    break;
+                     }
+     }
+   
+                                               ?>
+
+                    
+                                       
+    </body> 
+ </html>

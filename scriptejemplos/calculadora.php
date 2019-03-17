@@ -1,31 +1,62 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+             <meta charset="UTF-8">
+            <title>Operaciones Matematicas</title>
 
-$num1=$_POST0['N1'];
-$num2=$_POST0['N2'];
-$oper=$_POST0['tipo_op'];	
-$num1=$_POST0['N1'];
-$resul=0;
-echo "mumero1:".$num1."."<br>";	
-echo "mumero2:".$num2."."<br>";	
-echo "tipo opreracion:".$oper;					
-		
+    </head>
+    <body>
+         <fieldset>
+            <legend>Operaciones Matematicas</legend>
+            <form action="#"method="POST">
+                  <label for="N1">primer numero</label>
+                  <input type="number" name="n1" requred>
+                  <br><br>
+                  <label for="N2">segundo numero</label>
+                  <input type="number" name="n2" requred>
+                  <br><br>
+               <label for="operaciones">operaciones aritmeticas</label>
+            
+   
+            <select name="operaciones"id="opr">
+                    <option value="sumar">sumar</option>
+                    <option value="restar">Restar</option>
+                    <option value="multiplicar">Multiplicar</option>
+                    <option value="dividir">Dividir</option>
+             </select>
+              <br>
+<input type="submit"name="enviar"value="Calcular">
+                       
+             </form>
+         </fieldset>
+    <h1>RESULTADOS</h1>
+    <?php
+    $n1=$_POST['n1'];
+    $n2=$_POST['n2'];
+    $opr=$_POST['operaciones'];
+    if(isset($_POST["enviar"])){
+    switch($opc){
 
+                                case'sumar':
+                                    $resultado=$n1 + $n2;
+                                   echo"la suma de ".$n1."+".$n2."=".$resultado;                   
+                                   break;
+                                case'restar':
+                                    $resultado=$n1 - $n2;
+                                    echo"la resta de ".$n1."+".$n2."=".$resultado;                   
+                                    break;
+                               case'dividir':
+                                    $resultado=$n1 * $n2;
+                                    echo"la multiplicacion de ".$n1."+".$n2."=".$resultado;                   
+                                    break;
+                                 case'multiplicarr':
+                                    $resultado=$n1 / $n2;
+                                    echo"la division de ".$n1."+".$n2."=".$resultado;                   
+                                    break;
+                     }
+     }
+   
+   ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>
+       </body> 
+        </html> 
