@@ -10,7 +10,7 @@
 		  }
 	  }
   echo "</table>";	 
-  echo"<hr>";
+
      echo "<table border = '1'><tr>";
 	  for($i=1;$i<=10;$i++)
 	  {
@@ -21,6 +21,37 @@
 			  
 		  }
 	  }
-  echo "</tr></table>";	 
- 
+	  echo"<hr>";
+	  
+  echo "</tr></table>";	
+  echo"<hr>";
+    echo "<table border = '1'><tr>";
+   for($i = 0; $i < 100; $i+=3){
+	    
+      echo $i . '<br />';
+   }
+    echo"<hr>";
+	$num = 1;
+$suma = 0;
+
+ while ($num <=100) { 
+      $suma = $suma + $num;
+      $num = $num + 1;
+      echo "$num.<br>";
+    
+     
+    }
+     echo "La sumatoria es: $suma";
+			  
+  echo "</table>";
+   echo"<hr>";
+    echo "</tr></table>";	
+  echo"<hr>";
+    echo "<table border = '1'><tr>";
+   for($i = 0; $i < 100; $i+=2){
+	   
+      echo $i . '<br />';
+   }
+    echo"<hr>";
+    
 ?>
