@@ -12,7 +12,7 @@
                   <label for="N1">primer numero</label>
                   <input type="number" name="n1" requred>
                   <br><br>
-                  <label for="N2">segundo numero</label>
+                  <label for="N2">descendente</label>
                   <input type="number" name="n2" requred>
                   <br><br>
                <label for="operaciones">operaciones aritmeticas</label>
